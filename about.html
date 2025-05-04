@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hans Lopez</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js" defer></script>
+        <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="transition.js"></script>
+    </head>
+    
+    <body>
+        <div class="transition">
+            <div class="transition-row row-1">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="transition-row row-2">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="bi bi-controller me-2"></i>Hans Lopez</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="works.html">Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                        <li class="nav-item">
+                            <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3" title="Toggle theme">
+                              <i class="bi bi-moon-fill" id="themeIcon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--put about me here-->
+        <section class="about-section py-5">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2 class="fw-bold">Aspiring Game Developer</h2>
+                        <p class="fst-italic text-muted">
+                            Passionate about creating meaningful designs and turning ideas into interactive experiences through code and creativity.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="row align-items-center about">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <img src="imgs/profile_pic.png" alt="Hans Lopez" class="img-fluid rounded-4 shadow">
+                    </div>
+        
+                    <div class="col-md-8">
+                        <h2 class="mb-4">About Me</h2>
+                        <div class="row">
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>Birthday:</strong> 23 Dec 2005
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>Age:</strong> 19
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>Nationality:</strong> Filipino
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>Phone:</strong> +63 908 344 2092
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>Email:</strong> lopzhans119@gmail.com
+                            </div>
+                            <div class="col-sm-6 mb-2">
+                                <i class="bi bi-chevron-right me-2 text-primary"></i><strong>City:</strong> Baguio City, Philippines
+                            </div>
+                        </div>
+        
+                        <p class="mt-4 text-muted">
+                            I’m passionate about learning how to games and interactive experiences. I enjoy trying to think of how this game im playing was made 
+                            and how I can possibly make something like it. I’m always looking for ways to improve my skills and learn new things related to game 
+                            development. Currently studying Computer Science with a goal to become a game developer. It all started with a simple
+                            curiosity about how games are made, and now I’m on a journey to create my own. I love playing games and at some point, 
+                            I want to create my own game. I’m not always serius when it comes to learning but that just comes with the territory of being a
+                            student, I'm lazy and I procrastinate a lot and sometimes I just want to play games. But I’m always looking for ways to 
+                            improve my skills and learn new things related to trying to make my own games. I take notes of videos that may help me in the future
+                            and try to find other poeple who also interested in game development. I'm not the best at learning but I try to learn as much as I can
+                            hoping that I can make games that i can be proud of.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="scroll-down text-center mt-5">
+                    <i class="bi bi-chevron-down scroll-icon"></i>
+                </div>               
+                            
+                <section class="skills-section container mt-5">
+                    <h3 class="display-6 fw-bold text-center mb-4 skill">My Skills</h3>
+                
+                    <div class="skill mb-3">
+                        <p><i class="bi bi-code-slash me-2 text-success"></i>HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 0%;" data-skill="60%">60%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill mb-3">
+                        <p><i class="bi bi-palette me-2 text-info"></i>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 0%;" data-skill="50%">50%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill mb-3">
+                        <p><i class="bi bi-braces me-2 text-warning"></i>JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 0%;" data-skill="20%">20%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill mb-3">
+                        <p><i class="bi bi-controller me-2 text-danger"></i>Game Development (Unity/C#)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 0%;" data-skill="10%">10%</div>
+                        </div>
+                    </div>
+                </section>                
+          </div>
+        </section>
+        <script src="animation.js"></script>
+
+        <!--contact-->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-white border-0 rounded-4">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title mx-auto" id="contactModalLabel">Contact Me</h5>
+                        <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="modal-body d-flex flex-column flex-md-row justify-content-around align-items-center gap-4 py-4 text-center">
+                        <div>
+                            <p class="mb-1">PO Box 2600, Baguio City, Philippines</p>
+                            <p class="mb-1">
+                                <a href="mailto:lopezhans119@gmail.com" class="text-decoration-none text-white">lopezhans119@gmail.com</a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="tel:+63 908 344 2092" class="text-decoration-none text-white">+63 908 344 2092</a>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer border-0 justify-content-center pt-0">
+                        <div class="modal-body py-4 px-4">
+                            <form id="contactForm" onsubmit="return validateForm()" class="text-start w-100">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-control" placeholder="Enter your message" rows="3"></textarea>
+                                </div>
+                                <div id="formError" class="text-danger mb-2"></div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-warning">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="w-100 text-center border-top border-secondary pt-3">
+                            <small class="text-light">© Hans Lopez</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <script src="validation.js"></script>
+    </body>

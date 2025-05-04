@@ -1,0 +1,59 @@
+body {
+    background-color: #faf0e6;
+    font-family: Arial;
+    font-size: 14pt;
+}
+
+.box {
+    border: solid 2px black;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.main-header {
+    font-family: Arial;
+    color: red;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.sub-header {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/*lists*/
+.numbered-list1 {
+    list-style-type: decimal;
+    color: #4169e1;
+}
+.numbered-list2 {
+    list-style-type: decimal;
+    color: #ff8c00;
+}
+
+.circle-list1 {
+    list-style-type: circle;
+    color: #2e8b57;
+}
+.circle-list2 {
+    list-style-type: circle;
+    color: #9370db;
+}
+
+.square-list1 {
+    list-style-type: square;
+    color: #b22222;
+}
+.square-list2 {
+    list-style-type: square;
+    color: #daa520;
+}
+

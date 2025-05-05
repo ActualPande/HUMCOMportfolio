@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hans Lopez</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js" defer></script>
+        <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="transition.js"></script>
+    </head>
+
+    <body>
+        <div class="transition">
+            <div class="transition-row row-1">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="transition-row row-2">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="bi bi-controller me-2"></i>Hans Lopez</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="works.html">Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                        <li class="nav-item">
+                            <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3" title="Toggle theme">
+                              <i class="bi bi-moon-fill" id="themeIcon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <section id="container">
+        <!-- Carousel Section -->
+        <section id="featured-carousel" class="container py-5 mt-5 pt-5">
+            <h2 class="mb-4">Featured Activities</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/pre1.PNG" class="d-block w-100 rounded-3" alt="Activity 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/pre6.PNG" class="d-block w-100 rounded-3" alt="Activity 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/mid5a.PNG" class="d-block w-100 rounded-3" alt="Activity 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/mid2b.PNG" class="d-block w-100 rounded-4" alt="Activity 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="container my-5" id="activity-grid">
+            <h2 class="mb-4">My Works</h2>
+            <ul class="nav nav-tabs" id="worksTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="prelim-tab" data-bs-toggle="tab" data-bs-target="#prelim" type="button" role="tab">Prelim</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="midterm-tab" data-bs-toggle="tab" data-bs-target="#midterm" type="button" role="tab">Midterm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="finals-tab" data-bs-toggle="tab" data-bs-target="#finals" type="button" role="tab">Finals</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-4" id="worksTabContent">
+
+                <!-- Prelim Tab -->
+                <div class="tab-pane fade show active" id="prelim" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal1">
+                                    <img src="imgs/pre1.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity">                        
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 1</h5>
+                                    <p class="text-white small">Applying knowledge in basic HTML formatting tags</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal2">      
+                                    <img src="imgs/pre2.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 2">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 2</h5>
+                                    <p class="text-white small">Apply HTML character entities and discover the use of &lt;pre&gt; and other tags to apply white spaces</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal3">      
+                                    <img src="imgs/pre3.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 3">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 3</h5>
+                                    <p class="text-white small">Use of HTML lists and apply attributes such as type, start, and be able to create nested lists</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal4">      
+                                    <img src="imgs/pre4.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 2">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 4</h5>
+                                    <p class="text-white small">Be able to create text links, and know how to cite reference for articles and texts downloaded from the Web</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal5">      
+                                    <img src="imgs/pre5.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 2">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 5</h5>
+                                    <p class="text-white small">Createing table columns, rows and set tbale attributes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal6">      
+                                    <img src="imgs/pre6.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 2">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 6</h5>
+                                    <p class="text-white small">Be able to create more complex tables along with using colspan and rowspan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal7">      
+                                    <img src="imgs/pre7.PNG" class="img-fluid w-100 activity-img" alt="Prelim Activity 2">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">LAB Exercise 7</h5>
+                                    <p class="text-white small">Creating text and image hyperlinks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Midterm Tab -->
+                <div class="tab-pane fade" id="midterm" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal8">
+                                    <img src="imgs/mid1.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS1</h5>
+                                    <p class="text-white small">Be able to relate HTML tags with CSS selectors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal9">
+                                    <img src="imgs/mid2.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS2</h5>
+                                    <p class="text-white small">Be able to relate HTML tags with CSS selectors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal10">
+                                    <img src="imgs/mid2a.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS2a</h5>
+                                    <p class="text-white small">Edit a previous activity and apply appropriate CSS selectors for images and backgrounds</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal11">
+                                    <img src="imgs/mid2b.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS2b</h5>
+                                    <p class="text-white small">Use of INTERNAL and EXTERNAL style sheet and applying the concepts they have learned regarding CSS classes and IDs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal12">
+                                    <img src="imgs/mid3.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS3</h5>
+                                    <p class="text-white small">Applying the concepts learned regarding CSS links with the use of external style sheet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal13">
+                                    <img src="imgs/mid4.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS4</h5>
+                                    <p class="text-white small">Apply the use of CSS classes/id’s, span and div</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal14">
+                                    <img src="imgs/mid5a.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS5a</h5>
+                                    <p class="text-white small">Apply the use of CSS margins and use EXTERNAL style sheet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal15">
+                                    <img src="imgs/mid5b.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS5b</h5>
+                                    <p class="text-white small">Apply the use of CSS margins and use EXTERNAL style sheet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal16">
+                                    <img src="imgs/mid6.PNG" class="img-fluid w-100 activity-img" alt="Midterm Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">ExerciseCSS6</h5>
+                                    <p class="text-white small">Create columns and boxes using div, format columns and boxes using classes and ids and div properties, use internal style sheet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Finals Tab -->
+                <div class="tab-pane fade" id="finals" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal17">
+                                    <img src="imgs/Final1.PNG" class="img-fluid w-100 activity-img" alt="Finals Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">Finals-Lab1</h5>
+                                    <p class="text-white small">Simple calculator using JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal18">
+                                    <img src="imgs/Final2.PNG" class="img-fluid w-100 activity-img" alt="Finals Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">Finals-Lab2</h5>
+                                    <p class="text-white small">JavaScript that tells you if a number is Odd/Even or Prime/Composite</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal19">
+                                    <img src="imgs/Final3.PNG" class="img-fluid w-100 activity-img" alt="Finals Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">Finals-Lab3</h5>
+                                    <p class="text-white small">JavaScript that converts Kilometers to centimeters</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="activity-card position-relative overflow-hidden rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#activityModal20">
+                                    <img src="imgs/Final4.PNG" class="img-fluid w-100 activity-img" alt="Finals Activity">
+                                <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h5 class="text-white">Finals-Lab4</h5>
+                                    <p class="text-white small">JavaScript that creats a table with the number or rows and columns you inputed</p>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal LAB Exercise 1 -->
+        <div class="modal fade" id="activityModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                    <div class="modal-body text-center">
+                        <img src="imgs/pre1.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+                  
+                <!-- Toggle Buttons -->
+                        <div class="mb-3">
+                            <a href="Activities/Prelims/LAB Exercise 1.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                            <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode">View HTML</button>                           
+                        </div>
+          
+                <!-- Collapsible HTML Code Section -->
+                    <div class="collapse text-start" id="htmlCode">
+                        <div class="card card-body bg-light text-dark">
+<pre><code>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            hr {border-width: 3pc;}
+            .a {
+                max-width: fit-content; margin-left: auto; margin-right: auto;
+            }
+        &lt;/style&gt;
+        &lt;title&gt;
+            Hans Jayden Lopez Information
+        &lt;/title&gt;
+    &lt;/head&gt;
+            &lt;h1 style="text-align: center; color: blue;"&gt;
+                HANS JAYDEN LOPEZ
+            &lt;/h1&gt;
+    
+        &lt;body style="background-color: lightblue;"&gt;
+            &lt;div class="a"&gt;
+                &lt;hr&gt;
+                &lt;h3&gt;
+                    PERSONAL INFORMATION:
+                &lt;/h3&gt;
+            &lt;h5&gt;    
+                &lt;pre style="font-family: Arial, Helvetica, sans-serif;"&gt;
+Age:                                      19&lt;br&gt;
+Gender:                                Male&lt;br&gt;
+Date of Birth:                       December 23, 2005&lt;br&gt;
+Place of Birth:                      Baguio City &lt;br&gt;
+Contact No.                          09083442092&lt;br&gt;
+Baguio Address:                 #228 L.Ceniza St., Victoria Village, Baguio City&lt;br&gt;
+                &lt;/pre&gt;
+            &lt;/h5&gt;
+
+            &lt;h3&gt;
+                EDUCATION:
+            &lt;/h3&gt;
+            &lt;hr&gt;
+
+            &lt;h5&gt;
+                &lt;pre style="font-family: Arial, Helvetica, sans-serif;"&gt;
+College                                  August 2024 - Present
+                                               Bachelor of Science in Computer Science
+                                               University of Baguio
+                                               Baguio City&lt;br&gt;
+
+High School                          2018 - 2024
+                                               University of Baguio Highschool
+                                               Baguio City&lt;br&gt;
+
+Elementary                            2012 - 2018
+                                               University of Baguio Laboratory Elementary School
+                                               Baguio City
+                &lt;/pre&gt;
+            &lt;/h5&gt;
+
+            &lt;h3&gt;
+                Awards &amp;amp; Recognition:
+            &lt;/h3&gt;
+            &lt;hr&gt;
+            &lt;h5&gt;
+                &lt;pre style="font-family: Arial, Helvetica, sans-serif;"&gt;  
+Third Place                            Quiz Bee
+                                                University of Baguio Highschool
+                                                2023&lt;br&gt;
+                                                Milo Swimming Competition
+                                                Aquatic Bowl
+                                                2016&lt;br&gt;
+
+First Place                             PC Building Competition
+                                               University og Baguio Highschool
+                                               2023&lt;br&gt;
+                &lt;/pre&gt;
+            &lt;/h5&gt;
+
+            &lt;h3&gt;
+                Skills &amp;amp; Talents:
+            &lt;/h3&gt;
+            &lt;h5&gt;
+                &lt;pre style="font-family: Arial, Helvetica, sans-serif;"&gt;
+-Swimming, Programming, Gaming, Communication
+                &lt;/pre&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt; 
+        &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                        </div>
+                    </div>           
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--LAB Exercise 2--> 
+        <div class="modal fade" id="activityModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre2.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 2.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode2">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode2">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;title&gt;Sample Polynomial Expressions By Hans Jayden Lopez&lt;/title&gt;
+
+    &lt;style&gt;
+        body {
+            background-color: thistle;    
+        }
+
+        hr {
+            height: 5px;
+            background-color: #000000;
+            border: none;
+        }
+    &lt;/style&gt;
+
+        &lt;div class="box"&gt;
+    &lt;head&gt;      
+&lt;pre style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline;"&gt;
+Sample Polynomial Expressions:
+&lt;/pre&gt;      
+    &lt;/head&gt;
+
+    &lt;body&gt;
+               &lt;pre style="font-size: x-large; font-family: 'Times New Roman', Times, serif;"&gt;
+           &lt;b style="font-family: Arial, Helvetica, sans-serif;"&gt;&lt;u&gt;Name&lt;/u&gt;                 &lt;u&gt;Example&lt;/u&gt;                                              &lt;u&gt;Note&lt;/u&gt;&lt;/b&gt;
+
+           Monomial             (3x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt;) ÷ 1                                                 Q&lt;sub&gt;1&lt;/sub&gt;: One term (mono)
+           Binomial             2xy + 1/2y&lt;sup&gt;2&lt;/sup&gt;                                                Q&lt;sub&gt;2&lt;/sub&gt;: Two terms (bi)
+           Trinomial            x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;4&lt;/sup&gt; + 2x&lt;sup&gt;3&lt;/sup&gt;y + xy&lt;sup&gt;2&lt;/sup&gt;                        Q&lt;sub&gt;3&lt;/sub&gt;: Three terms (tri)
+           Polynomial           6x&lt;sup&gt;4&lt;/sup&gt;y + 5x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;2&lt;/sup&gt; + 4x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt; + xy&lt;sup&gt;4&lt;/sup&gt; + 7y&lt;sup&gt;5&lt;/sup&gt;     Q&lt;sub&gt;4&lt;/sub&gt;: Many terms (poly)&lt;hr&gt;
+© College Algebra Fundamentals
+               &lt;/pre&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;    
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--LAB Exercise 3-->
+        <div class="modal fade" id="activityModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre3.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 3.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode3">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode3">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;title&gt;Exercise 2: Lists&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14pt;
+        }
+                
+        h3 {
+            color: crimson;
+        }
+        
+        .box {
+            border: solid 2px black;
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            padding: 10px;
+        }
+    &lt;/style&gt;
+    &lt;head&gt;
+        &lt;div class="box"&gt;
+        &lt;h3 style="font-family: Arial, Helvetica, sans-serif; color: red; font-size: 14pt; font-weight: bold; text-decoration: underline;"&gt;
+            Winter and Snow Camping Safety for Scout Leaders
+        &lt;/h3&gt;
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+        &lt;h3&gt;
+            Topics Covered&lt;br&gt;&lt;br&gt;
+            &lt;u&gt;Session 1 -&lt;/u&gt; The Fun Stuff - In town, Saturday morning
+        &lt;/h3&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;Goals&lt;/li&gt;
+            &lt;li&gt;Introductory remarks and outline of this course&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+            &lt;ul type="circle"&gt;
+                &lt;li&gt;Clothing&lt;/li&gt;
+                &lt;li&gt;Sleeping materials&lt;/li&gt;
+                &lt;ul type="square"&gt;
+                    &lt;li&gt;&lt;i&gt;Sleeping bags;&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i&gt;Sleeping pad; and&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i&gt;other sleeping gear&lt;/i&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;li&gt;Tents and other camp&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Trip planning&lt;/li&gt;
+            &lt;li&gt;Winter driving&lt;/li&gt;
+        &lt;/ol&gt;
+        
+        &lt;h3&gt;
+            &lt;u&gt;Session 2&lt;/u&gt; - Serious Concerns - &lt;i&gt;In town, Saturday afternoon&lt;/i&gt;
+        &lt;/h3&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;Further Administrative Details&lt;/li&gt;
+            &lt;li&gt;Overview of problems unique to winter and snow activities&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+            &lt;ul type="circle"&gt;
+                &lt;li&gt;Minimum Impact Camping and Sanitation&lt;/li&gt;
+                &lt;li&gt;Snow travel and intro to&lt;/li&gt;
+                &lt;ul type="square"&gt;
+                    &lt;li&gt;Skis&lt;/li&gt;
+                    &lt;li&gt;Snowshoes&lt;/li&gt;
+                    &lt;li&gt;Sleds&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;li&gt;Weather - some considerations on how winter differs from summer trips&lt;/li&gt;
+                &lt;li&gt;Avalanche dangers&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Navigating - Special considerations in land navigation in winter conditions&lt;/li&gt;
+            &lt;li&gt;Dealing with Winter Emergencies&lt;/li&gt;
+            &lt;li&gt;Other Problems to Consider and Wrap-up of session&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--LAB Exercise 4-->
+        <div class="modal fade" id="activityModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre4.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 4.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode4">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode4">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;style&gt;
+        .head 
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body 
+        {    
+            margin-left: 3in; margin-right: 3in;
+            background-color: bisque;           
+        }
+        .text
+        {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        hr
+        {
+            border: solid 1px
+        }
+        .References
+        {
+            font-size: 14pt;
+        }
+        .date
+        {
+            font-size: 13px; 
+        }
+    &lt;/style&gt;
+        
+    &lt;title&gt;Why Horror Fans Should Play Indie Studio Project Moon's Games Hans Lopez&lt;/title&gt;
+    &lt;head&gt;
+        &lt;div class="head"&gt;
+        &lt;h1&gt;Why Horror Fans Should Play Indie Studio Project Moon's Games&lt;/h1&gt;
+        &lt;h2&gt;A Deep Dive into Dark Storytelling and Challenging Gameplay&lt;/h2&gt;
+        &lt;h3&gt;By: &lt;a target="_blank" href="mailto:20124537@s.ubaguio.edu"&gt;Hans Jayden A. Lopez&lt;/a&gt;&lt;br&gt;&lt;div class="date"&gt;February 3, 2025&lt;/div&gt;&lt;/h3&gt;
+        &lt;hr&gt;
+        &lt;/div&gt;
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+        &lt;div class="Text"&gt;
+        &lt;p&gt;
+            For fans of the horror genre, discovering games that delve deep into psychological terror and explore dark, unsettling themes is always a thrill. Indie studio &lt;a href="https://projectmoon.fandom.com/wiki/Project_Moon" target="_blank"&gt;Project Moon&lt;/a&gt; 
+            is a developer that has mastered the art of creating nightmarish, thought-provoking worlds that are far from conventional. Their games, Lobotomy Corporation and Library of Ruina,
+            offer horror fans a unique blend of storytelling, gameplay, and atmosphere. Project Moon's approach to horror is unlike anything seen in mainstream titles, making their games
+            essential experiences for anyone who craves something more intense and cerebral.&lt;br&gt;&lt;br&gt;
+        
+            What sets Project Moon apart is its ability to combine dark narratives with innovative gameplay mechanics. In &lt;a href="https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/" target="_blank"&gt;Lobotomy Corporation&lt;/a&gt;, players are tasked with managing a corporation
+            that contains dangerous entities known as "&lt;a href="https://projectmoon.fandom.com/wiki/Abnormalities" target="_blank"&gt;Abnormalities&lt;/a&gt;." While it may sound like a typical management sim at first glance, the game is packed with horrific imagery, moral dilemmas,
+            and existential questions that make players feel the weight of every decision. The horror isn't just in the gruesome visuals, but in the overwhelming sense of responsibility and the
+            ethical compromises the player must face. This type of emotional and &lt;a href="https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22" target="_blank"&gt;psychological horror&lt;/a&gt; is a rare but powerful experience.&lt;br&gt;&lt;br&gt;
+        
+            In &lt;a href="https://store.steampowered.com/app/1256670/Library_Of_Ruina/" target="_blank"&gt;Library of Ruina&lt;/a&gt;, the terror is no longer just external but internal, as players enter a strange library where the battles they face are rooted in the inner workings of human nature
+            and despair. The game’s turn-based combat is coupled with a narrative that explores the darker side of humanity, including suffering, loss, and the pursuit of meaning. The visceral
+            nature of the combat, combined with the thematic elements of the story, pulls players into a world that’s as haunting as it is profound. For horror fans, Library of Ruina offers a different
+            type of terror, one that stems from understanding the human psyche's fragility and the darkness that dwells within.&lt;br&gt;&lt;br&gt;
+        
+            Another reason horror fans should turn to Project Moon’s titles is the company's mastery in &lt;a href="https://www.youtube.com/watch?v=G0oSTZ5jtLQ" target="_blank"&gt;world-building&lt;/a&gt;. Both Lobotomy Corporation and Library of Ruina feature intricate universes full of
+            lore and hidden stories waiting to be uncovered. Every Abnormality, every character, and every piece of dialogue holds a deeper meaning. The sense of mystery is palpable, as the more players
+            explore these worlds, the more unsettling truths they uncover. This level of depth is rarely seen in traditional horror games, which tend to prioritize immediate scares over a complex and
+            evolving world. &lt;br&gt;&lt;br&gt;
+        
+            Finally, the unique &lt;a href="https://www.gamedeveloper.com/design/the-art-of-games" target="_blank"&gt;art direction&lt;/a&gt; in Project Moon’s games adds another layer of horror that complements the gameplay and narrative. With its distinctive, often grotesque character designs,
+            Project Moon’s visual style pulls players into its dark and twisted worlds. The game’s anime-inspired art, combined with unsettling themes, creates a sense of dissonance—beauty mixed with
+            horror—that amplifies the eerie atmosphere. This juxtaposition between the gorgeous artwork and the disturbing content heightens the emotional impact, offering horror fans a visually
+            captivating yet nightmarish experience.&lt;br&gt;&lt;br&gt;
+        &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;h2 style="text-align: center;"&gt;References&lt;/h2&gt;
+        &lt;div class="references"&gt;
+        &lt;a href="https://projectmoon.fandom.com/wiki/Project_Moon" target="_blank"&gt;https://projectmoon.fandom.com/wiki/Project_Moon&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/" target="_blank"&gt;https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://projectmoon.fandom.com/wiki/Abnormalities" target="_blank"&gt;https://projectmoon.fandom.com/wiki/Abnormalities&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22" target="_blank"&gt;https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://store.steampowered.com/app/1256670/Library_Of_Ruina/" target="_blank"&gt;https://store.steampowered.com/app/1256670/Library_Of_Ruina/&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.youtube.com/watch?v=G0oSTZ5jtLQ" target="_blank"&gt;https://www.youtube.com/watch?v=G0oSTZ5jtLQ&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.gamedeveloper.com/design/the-art-of-games" target="_blank"&gt;https://www.gamedeveloper.com/design/the-art-of-games&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--LAB Exercise 5-->
+        <div class="modal fade" id="activityModal5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre5.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 5.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode5">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode5">
+                    <div class="card card-body bg-light text-dark">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Schedule of Hans Jayden A. Lopez&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 5px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #34495e;
+        }
+        th {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Schedule of Hans Jayden A. Lopez&lt;/h1&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Subject&lt;/th&gt;
+                &lt;th&gt;Time&lt;/th&gt;
+                &lt;th&gt;Days&lt;/th&gt;
+                &lt;th&gt;Room&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Networks and Communications&lt;/td&gt;
+                &lt;td&gt;8:00 AM - 9:00 AM&lt;/td&gt;
+                &lt;td&gt;Monday, Wednesday&lt;/td&gt;
+                &lt;td&gt;F216&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;National Service Training Program 2&lt;/td&gt;
+                &lt;td&gt;8:00 AM - 9:30 AM&lt;/td&gt;
+                &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+                &lt;td&gt;F106&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Operating System&lt;/td&gt;
+                &lt;td&gt;9:00 AM - 10:00 AM&lt;/td&gt;
+                &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+                &lt;td&gt;F214&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Computer Programming&lt;/td&gt;
+                &lt;td&gt;11:00 AM - 2:00 PM&lt;/td&gt;
+                &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+                &lt;td&gt;P213&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Discrete Structures 1&lt;/td&gt;
+                &lt;td&gt;11:00 AM - 12:00 PM&lt;/td&gt;
+                &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+                &lt;td&gt;F106&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;The Contemporary World&lt;/td&gt;
+                &lt;td&gt;1:00 PM - 2:00 PM&lt;/td&gt;
+                &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+                &lt;td&gt;R212&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Human Computer Interaction&lt;/td&gt;
+                &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+                &lt;td&gt;Monday, Friday&lt;/td&gt;
+                &lt;td&gt;F112&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Exercise-Based Fitness Activities&lt;/td&gt;
+                &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+                &lt;td&gt;Wednesday&lt;/td&gt;
+                &lt;td&gt;TBA&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Science, Technology and Society&lt;/td&gt;
+                &lt;td&gt;5:00 PM - 6:00 PM&lt;/td&gt;
+                &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+                &lt;td&gt;F106&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;    
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!--LAB Exercise 6-->
+        <div class="modal fade" id="activityModal6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre6.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 6.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode6">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode6">
+                    <div class="card card-body bg-light text-dark">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Graph Schedule of Hans Jayden A. Lopez&lt;/title&gt;
+    &lt;style&gt;
+        body 
+        {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    
+        .container 
+        {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+    
+        h1 
+        {
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        .table-container 
+        {
+            text-align: center;
+        }
+    
+        table 
+        {
+            width: 80%;
+            height: 60vh;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 10pt;
+        }
+    
+        th 
+        {
+            padding: 5px;
+            background-color: #333;
+            color: white;
+            font-family: Tahoma, sans-serif;
+            font-size: 12pt;
+            text-align: center;
+            width: 5%;
+        }
+    
+        td 
+        {
+            padding: 5px;
+            border: 1px solid #20C997;
+            font-family: Tahoma, sans-serif;
+            font-size: 11pt;
+            text-align: center;
+            width: 1%;
+        }
+    
+        /* subjects */
+        .SITNET { background-color:  #ffebee; }     
+        .NSTP { background-color:    #CBC3E3; }   
+        .OPSYST { background-color: #e3f2fd; }   
+        .PROGIT { background-color: #fff3e0; }   
+        .DITRUC { background-color: #777777;}
+        .CWORLD {background-color: darkseagreen;}
+        .SITNET {background-color:tomato;}
+        .HUMCOM {background-color: #DCCFEC;}
+        .PATHFT {background-color: #74A4BC;}
+        .SCITEST {background-color: #F3C178;}
+        .blank {background-color: white;}        
+            
+        .time-slot              
+        {
+            height: auto;
+            vertical-align: middle;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Weekly Class Schedule - Hans Jayden A. Lopez&lt;/h1&gt;
+        &lt;div class=&quot;table-container&quot;&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;th&gt;Monday&lt;/th&gt;
+                    &lt;th&gt;Tuesday&lt;/th&gt;
+                    &lt;th&gt;Wednesday&lt;/th&gt;
+                    &lt;th&gt;Thursday&lt;/th&gt;
+                    &lt;th&gt;Friday&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;8:00 AM&lt;/td&gt;
+                    &lt;td class=&quot;SITNET&quot; rowspan=&quot;2&quot;&gt;8:00AM - 9:00 AM&lt;br&gt;[SITNET1]&lt;br&gt;NETWORKS AND COMMUNICATIONS&lt;br&gt;F216&lt;br&gt;&lt;i&gt;ANTHONY GALUTAN JR.&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;NSTP&quot; rowspan=&quot;3&quot;&gt;8:00AM - 9:30 AM&lt;br&gt;[NSTPRO2]&lt;br&gt;NATIONAL SERVICE TRAINING PROGRAM 2&lt;br&gt;F306&lt;br&gt;&lt;i&gt;CATHERINE REYES&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;SITNET&quot; rowspan=&quot;2&quot;&gt;8:00AM - 9:00 AM&lt;br&gt;[SITNET1]&lt;br&gt;NETWORKS AND COMMUNICATIONS&lt;br&gt;F216&lt;br&gt;&lt;i&gt;ANTHONY GALUTAN JR.&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;NSTP&quot; rowspan=&quot;3&quot;&gt;8:00AM - 9:30 AM&lt;br&gt;[NSTPRO2]&lt;br&gt;NATIONAL SERVICE TRAINING PROGRAM 2&lt;br&gt;F306&lt;br&gt;&lt;i&gt;CATHERINE REYES&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;SITNET&quot; rowspan=&quot;6&quot;&gt;8:00AM - 11:00 AM&lt;br&gt;[SITNET1]&lt;br&gt;NETWORKS AND COMMUNICATIONS&lt;br&gt;D202&lt;br&gt;&lt;i&gt;ANTHONY GALUTAN JR.&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;8:30 AM&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;9:00 AM&lt;/td&gt;
+                    &lt;td class=&quot;OPSYST&quot; rowspan=&quot;2&quot;&gt;9:00 AM - 10:00 AM&lt;br&gt;[OSPST1]&lt;br&gt;OPERATING SYSTEM&lt;br&gt;F214&lt;br&gt;&lt;i&gt;CATHERINE REYES&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;OPSYST&quot; rowspan=&quot;2&quot;&gt;9:00 AM - 10:00 AM&lt;br&gt;[OSPST1]&lt;br&gt;OPERATING SYSTEM&lt;br&gt;F214&lt;br&gt;&lt;i&gt;CATHERINE REYES&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;9:30 AM&lt;/td&gt;
+                    &lt;td class=&quot;PROGIT&quot; rowspan=&quot;2&quot;&gt;9:30 AM - 10:30 AM&lt;br&gt; [PROGIT1]&lt;br&gt;COMPUTER PROGRAMMING&lt;br&gt;F214&lt;br&gt;&lt;i&gt;DIVINE AGUILAR-AGUDONG&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;PROGIT&quot; rowspan=&quot;2&quot;&gt;9:30 AM - 10:30 AM&lt;br&gt; [PROGIT1]&lt;br&gt;COMPUTER PROGRAMMING&lt;br&gt;F214&lt;br&gt;&lt;i&gt;DIVINE AGUILAR-AGUDONG&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;10:00 AM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;10:30 AM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;11:00 AM&lt;/td&gt;
+                    &lt;td class=&quot;DITRUC&quot; rowspan=&quot;2&quot;&gt;11:00 AM - 12:00 PM&lt;br&gt;[DITRUC1]&lt;br&gt;DISCRETE STRUCTURES 1&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JEREMY MOSES EBREO&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;PROGIT&quot; rowspan=&quot;6&quot;&gt;11:00 AM - 1:30 PM&lt;br&gt;[PROGIT1]&lt;br&gt;COMPUTER PROGRAMMING&lt;br&gt;F213&lt;br&gt;&lt;i&gt;DIVINE AGUILAR-AGUDONG&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;DITRUC&quot; rowspan=&quot;2&quot;&gt;11:00 AM - 12:00 PM&lt;br&gt;[DITRUC1]&lt;br&gt;DISCRETE STRUCTURES 1&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JEREMY MOSES EBREO&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;PROGIT&quot; rowspan=&quot;6&quot;&gt;11:00 AM - 1:30 PM&lt;br&gt;[PROGIT1]&lt;br&gt;COMPUTER PROGRAMMING&lt;br&gt;F213&lt;br&gt;&lt;i&gt;DIVINE AGUILAR-AGUDONG&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;DITRUC&quot; rowspan=&quot;2&quot;&gt;11:00 AM - 12:00 PM&lt;br&gt;[DITRUC1]&lt;br&gt;DISCRETE STRUCTURES 1&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JEREMY MOSES EBREO&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;11:30 AM&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;12:00 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;12:30 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;1:00 PM&lt;/td&gt;
+                    &lt;td class=&quot;CWORLD&quot; rowspan=&quot;2&quot;&gt;1:00 PM - 2:00 PM&lt;br&gt;[CWORLD1]&lt;br&gt;THE CONTEMPORARY WORLD&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JOSEPHINE VILLAMOR&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;CWORLD&quot; rowspan=&quot;2&quot;&gt;1:00 PM - 2:00 PM&lt;br&gt;[CWORLD1]&lt;br&gt;THE CONTEMPORARY WORLD&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JOSEPHINE VILLAMOR&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;CWORLD&quot; rowspan=&quot;2&quot;&gt;1:00 PM - 2:00 PM&lt;br&gt;[CWORLD1]&lt;br&gt;THE CONTEMPORARY WORLD&lt;br&gt;F306&lt;br&gt;&lt;i&gt;JOSEPHINE VILLAMOR&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;1:30 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;2:00 PM&lt;/td&gt;
+                    &lt;td class=&quot;HUMCOM&quot; rowspan=&quot;2&quot;&gt;2:00 PM - 3:00 PM&lt;br&gt;[HUMCOM1]&lt;br&gt;PURPOSIVE COMMUNICATION&lt;br&gt;F306&lt;br&gt;&lt;i&gt;DAVE MABILANGAN&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;HUMCOM&quot; rowspan=&quot;2&quot;&gt;2:00 PM - 3:00 PM&lt;br&gt;[HUMCOM1]&lt;br&gt;PURPOSIVE COMMUNICATION&lt;br&gt;F306&lt;br&gt;&lt;i&gt;DAVE MABILANGAN&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;HUMCOM&quot; rowspan=&quot;2&quot;&gt;2:00 PM - 3:00 PM&lt;br&gt;[HUMCOM1]&lt;br&gt;PURPOSIVE COMMUNICATION&lt;br&gt;F306&lt;br&gt;&lt;i&gt;DAVE MABILANGAN&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;2:30 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;3:00 PM&lt;/td&gt;
+                    &lt;td class=&quot;PATHFT&quot; rowspan=&quot;2&quot;&gt;3:00 PM - 4:00 PM&lt;br&gt;[PATHFT1]&lt;br&gt;PATH FIT: MOVEMENT COMPETENCY TRAINING&lt;br&gt;GYM&lt;br&gt;&lt;i&gt;CHRISTIAN MORAL&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;PATHFT&quot; rowspan=&quot;2&quot;&gt;3:00 PM - 4:00 PM&lt;br&gt;[PATHFT1]&lt;br&gt;PATH FIT: MOVEMENT COMPETENCY TRAINING&lt;br&gt;GYM&lt;br&gt;&lt;i&gt;CHRISTIAN MORAL&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;PATHFT&quot; rowspan=&quot;2&quot;&gt;3:00 PM - 4:00 PM&lt;br&gt;[PATHFT1]&lt;br&gt;PATH FIT: MOVEMENT COMPETENCY TRAINING&lt;br&gt;GYM&lt;br&gt;&lt;i&gt;CHRISTIAN MORAL&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;3:30 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;4:00 PM&lt;/td&gt;
+                    &lt;td class=&quot;SCITEST&quot; rowspan=&quot;2&quot;&gt;4:00 PM - 5:00 PM&lt;br&gt;[SCITEST1]&lt;br&gt;SCIENCE, TECHNOLOGY, AND SOCIETY&lt;br&gt;F306&lt;br&gt;&lt;i&gt;KAREN TUMALA&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;SCITEST&quot; rowspan=&quot;2&quot;&gt;4:00 PM - 5:00 PM&lt;br&gt;[SCITEST1]&lt;br&gt;SCIENCE, TECHNOLOGY, AND SOCIETY&lt;br&gt;F306&lt;br&gt;&lt;i&gt;KAREN TUMALA&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;SCITEST&quot; rowspan=&quot;2&quot;&gt;4:00 PM - 5:00 PM&lt;br&gt;[SCITEST1]&lt;br&gt;SCIENCE, TECHNOLOGY, AND SOCIETY&lt;br&gt;F306&lt;br&gt;&lt;i&gt;KAREN TUMALA&lt;/i&gt;&lt;br&gt;IAA1&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;time-slot&quot;&gt;4:30 PM&lt;/td&gt;
+                    &lt;td class=&quot;blank&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--LAB Exercise 7-->
+        <div class="modal fade" id="activityModal7" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/pre7.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Prelims/LAB Exercise 7.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode7">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode7">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>&lt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Compilation of First Grading Activities by [Your Name]&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+
+&lt;style&gt;
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .icon {
+    height: 50px;
+}
+
+hr {
+    border: 3px solid #333;
+    margin: 20px 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+.left-links, .right-links {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.left-links ul, .right-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-links li, .right-links li {
+    margin: 10px 0;
+}
+
+.left-links a, .right-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.center .profile-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.center a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.center a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 400px;
+    max-height: 700px;
+}
+
+li {
+    background-image: url(limbus-company-dance.gif);
+    background-size: cover;
+    background-position: bottom;
+    width: 300px;
+    height: 200px;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;header&gt;
+      &lt;img src="SITlogo.png" alt="SIT Logo" class="icon"&gt;
+      &lt;h1&gt;Compilation of First Grading Activities&lt;/h1&gt;
+      &lt;img src="UBLOGO.png" alt="UB Logo" class="icon"&gt;
+    &lt;/header&gt;
+
+    &lt;hr&gt;
+
+    &lt;div class="content"&gt;
+      &lt;div class="left-links"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 1.html" target="_blank"&gt;Exercise1&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 2.html" target="_blank"&gt;Exercise2&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 3.html" target="_blank"&gt;Exercise3&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class="center"&gt;
+        &lt;img src="pic.jpg" alt="Your Profile Picture - Source: [Website Name]" class="profile-pic"&gt;
+        &lt;p&gt;
+          Prepared by: &lt;a href="mailto:20124537@s.ubaguio.edu" target="_blank"&gt;Hans Jayden A. Lopez&lt;/a&gt;&lt;br&gt;
+          HUMCOM1 – IAA1&lt;br&gt;
+          Schedule: Monday, Tuesday, Thursday
+        &lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="right-links"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 4.html" target="_blank"&gt;Exercise4&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 5.html" target="_blank"&gt;Exercise5&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+          &lt;li&gt;&lt;a href="LAB Exercise 6.html" target="_blank"&gt;Exercise6&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--Midterms-->
+        <!--ExerciseCSS1-->
+        <div class="modal fade" id="activityModal8" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid1.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS1.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode8">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode8">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;   
+    &lt;style&gt;
+        body {
+            background-color: thistle;    
+        }
+
+        hr {
+            width: 100%;
+            height: 4px;
+            background-color: #000000;
+            border: none;
+        } 
+        h3 {
+            text-decoration: underline;
+        }
+    &lt;/style&gt;
+
+    &lt;div class="box"&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Sample Polynomial Expressions By Hans Jayden Lopez&lt;/title&gt;        
+    &lt;/head&gt; 
+
+    &lt;body&gt;
+        &lt;h3 style="font-family: Arial; font-size: 24px; font-weight: bold;"&gt;Sample Polynomial Expressions:&lt;/h3&gt;
+        
+        &lt;pre style="font-size: x-large; font-family: 'Times New Roman'"&gt;
+    &lt;b style="font-family: Arial;"&gt;&lt;u&gt;Name&lt;/u&gt;                 &lt;u&gt;Example&lt;/u&gt;                                              &lt;u&gt;Note&lt;/u&gt;&lt;/b&gt;
+
+    Monomial             (3x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt;) &amp;divide; 1                                     Q&lt;sub&gt;1&lt;/sub&gt;: One term (mono)&lt;br&gt;
+    Binomial             2xy + 1/2y&lt;sup&gt;2&lt;/sup&gt;                                                Q&lt;sub&gt;2&lt;/sub&gt;: Two terms (bi)&lt;br&gt;
+    Trinomial            x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;4&lt;/sup&gt; + 2x&lt;sup&gt;3&lt;/sup&gt;y + xy&lt;sup&gt;2&lt;/sup&gt;                            Q&lt;sub&gt;3&lt;/sub&gt;: Three terms (tri)&lt;br&gt;
+    Polynomial           6x&lt;sup&gt;4&lt;/sup&gt;y + 5x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;2&lt;/sup&gt; + 4x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt; + xy&lt;sup&gt;4&lt;/sup&gt; + 7y&lt;sup&gt;5&lt;/sup&gt;     Q&lt;sub&gt;4&lt;/sub&gt;: Many terms (poly)
+
+    &lt;hr&gt;
+    &amp;copy; College Algebra Fundamentals
+        &lt;/pre&gt;
+
+    &lt;/div&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--ExerciseCSS2-->
+        <div class="modal fade" id="activityModal9" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid2.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS2.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode9">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode9">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+
+    &lt;title&gt;Exercise 2: Lists&lt;/title&gt;
+
+    &lt;style&gt;
+        body {
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14pt;
+        }
+        
+        h3 {
+            color: crimson;
+            text-decoration: underline;
+        }
+
+        .box {
+            border: solid 2px black;
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            padding: 10px;
+        }
+        #Listed {
+            font-style: italic;
+            color: darkred;
+        }
+        #Italics {
+            font-style: italic;
+        }
+    &lt;/style&gt;
+
+    &lt;head&gt;
+        &lt;div class="box"&gt;
+        &lt;h3 style="font-family: Arial; color: red; font-size: 14pt; font-weight: bold;"&gt;
+            Winter and Snow Camping Safety for Scout Leaders
+        &lt;/h3&gt;
+    &lt;/head&gt;
+
+    &lt;bodys&gt;
+        &lt;h3&gt;
+            Topics Covered&lt;br&gt;&lt;br&gt;
+            &lt;u&gt;Session 1-&lt;/u&gt; The Fun Stuff - In town, Saturday morning
+        &lt;/h3&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;Goals&lt;/li&gt;
+            &lt;li&gt;Introductory remarks and outline of this course&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+                &lt;ul type="circle"&gt;
+                    &lt;li&gt;Clothing&lt;/li&gt;
+                    &lt;li&gt;Sleeping materials&lt;/li&gt;
+                        &lt;ul type="square"&gt;
+                            &lt;li id="Listed"&gt;Sleeping bags;&lt;/li&gt;
+                            &lt;li id="Listed"&gt;Sleeping pad;&lt;/li&gt;
+                            &lt;li id="Listed"&gt;other sleeping gear&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;li&gt;Tents and other camp&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;li&gt;Trip planning&lt;/li&gt;
+            &lt;li&gt;Winter driving&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h3&gt;
+            &lt;u&gt;Session 2&lt;/u&gt; - Serius Concerns - &lt;span id="Italics"&gt;In town, Saturday afternoon&lt;/span&gt;
+        &lt;/h3&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;Further Administrative Details&lt;/li&gt;
+            &lt;li&gt;Overview of problems unique to winter and snow activities&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+                &lt;ul type="circle"&gt;
+                    &lt;li&gt;Minimum Impact Camping and Sanitation&lt;/li&gt;
+                    &lt;li&gt;Snow travel and intro to&lt;/li&gt;
+                        &lt;ul type="square"&gt;
+                            &lt;li id="Listed"&gt;Skis&lt;/li&gt;
+                            &lt;li id="Listed"&gt;Snowshoes&lt;/li&gt;
+                            &lt;li id="Listed"&gt;sleds&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;li&gt;Weather - some considerations on how winter differs from summer trips&lt;/li&gt;
+                    &lt;li&gt;Avalanche dangers&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;li&gt;Navigating - Special considerations in land navigation in winter conditions&lt;/li&gt;
+            &lt;li&gt;Dealing with Winter Emergencies&lt;/li&gt;
+            &lt;li&gt;Other Problems to Consider and Wrap-up of session&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS2a-->
+        <div class="modal fade" id="activityModal10" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid2a.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS2a.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode10">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode10">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;head&gt;  
+    &lt;style&gt;
+        body {
+            background-color: thistle;    
+            background-image: url(The\ Library\ -\ Floor\ of\ Language.png);
+            color: rgb(43, 35, 35);
+            text-shadow: 2px 2px 5px black;
+        }
+        hr {
+            width: 100%;
+            height: 4px;
+            background-color: #361010;
+            border: none;
+            box-shadow: 2px 2px 5px #361010;
+        } 
+        h3 {
+            text-decoration: underline;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25); 
+            z-index: -1; 
+        }
+    &lt;/style&gt;
+
+    &lt;div class="box"&gt;  
+    &lt;title&gt;Sample Polynomial Expressions By Hans Jayden Lopez&lt;/title&gt;        
+    &lt;/head&gt; 
+
+    &lt;body style="color: #361010;"&gt;
+        &lt;h3 style="font-family: Arial; font-size: 24px; font-weight: bold;"&gt;Sample Polynomial Expressions:&lt;/h3&gt;
+        
+        &lt;pre style="font-size: x-large; font-family: 'Times New Roman'"&gt;
+    &lt;b style="font-family: Arial;"&gt;&lt;u&gt;Name&lt;/u&gt;                 &lt;u&gt;Example&lt;/u&gt;                                              &lt;u&gt;Note&lt;/u&gt;&lt;/b&gt;
+
+    Monomial             (3x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3)&lt;/sup&gt; &amp;divide; 1                                                 Q&lt;sub&gt;1&lt;/sub&gt;: One term (mono)&lt;br&gt;
+    Binomial               2xy + 1/2y&lt;sup&gt;2&lt;/sup&gt;                                                Q&lt;sub&gt;2&lt;/sub&gt;: Two terms (bi)&lt;br&gt;
+    Trinomial              x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;4&lt;/sup&gt; + 2x&lt;sup&gt;3&lt;/sup&gt;y + xy&lt;sup&gt;2&lt;/sup&gt;                                      Q&lt;sub&gt;3&lt;/sub&gt;: Three terms (tri)&lt;br&gt;
+    Polynomial           6x&lt;sup&gt;4&lt;/sup&gt;y + 5x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;2&lt;/sup&gt; + 4x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt; + xy&lt;sup&gt;4&lt;/sup&gt; + 7y&lt;sup&gt;5&lt;/sup&gt;             Q&lt;sub&gt;4&lt;/sub&gt;: Many terms (poly)&lt;hr&gt;
+&amp;copy; College Algebra Fundamentals
+        &lt;/pre&gt;
+        
+    &lt;/div&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS2b-->
+        <div class="modal fade" id="activityModal11" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid2b.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS2b.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode11" onclick="toggleCode('htmlCode11')">View HTML</button>
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#cssCode11" onclick="toggleCode('cssCode11')">View External CSS</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode11">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Schedule of Hans Jayden A. Lopez&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ExerciseCSS2b.css&quot;&gt;
+&lt;style&gt;
+body {
+font-family: Tahoma;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f0f0f0;
+background-image: url(Unnamed\ [Distorted\ Yan].png);
+}
+table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 5px;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+text-align: center;
+margin: auto;
+}
+th, td {
+padding: 10px;
+border: 1px solid #34495e;
+}
+th {
+background-color:#2a4d57;
+color: #fff;
+}
+.container 
+{
+width: 100%;
+max-width: 1030px;
+}
+h1
+{
+ text-align: center;
+ color: white;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;    
+    &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;Schedule of Hans Jayden A. Lopez&lt;/h1&gt;   
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Subject&lt;/th&gt;
+            &lt;th&gt;Time&lt;/th&gt;
+            &lt;th&gt;Days&lt;/th&gt;
+            &lt;th&gt;Room&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;networks&quot;&gt;Networks and Communications&lt;/td&gt;
+            &lt;td&gt;8:00 AM - 9:00 AM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday&lt;/td&gt;
+            &lt;td&gt;F216&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;nstp&quot;&gt;National Service Training Program 2&lt;/td&gt;
+            &lt;td&gt;8:00 AM - 9:30 AM&lt;/td&gt;
+            &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;os&quot;&gt;Operating System&lt;/td&gt;
+            &lt;td&gt;9:00 AM - 10:00 AM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F214&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;programming&quot;&gt;Computer Programming&lt;/td&gt;
+            &lt;td&gt;11:00 AM - 2:00 PM&lt;/td&gt;
+            &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+            &lt;td&gt;P213&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;discrete&quot;&gt;Discrete Structures 1&lt;/td&gt;
+            &lt;td&gt;11:00 AM - 12:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;contemporary&quot;&gt;The Contemporary World&lt;/td&gt;
+            &lt;td&gt;1:00 PM - 2:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;R212&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;hci&quot;&gt;Human Computer Interaction&lt;/td&gt;
+            &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Friday&lt;/td&gt;
+            &lt;td&gt;F112&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;fitness&quot;&gt;Exercise-Based Fitness Activities&lt;/td&gt;
+            &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+            &lt;td&gt;Wednesday&lt;/td&gt;
+            &lt;td&gt;TBA&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;sts&quot;&gt;Science, Technology and Society&lt;/td&gt;
+            &lt;td&gt;5:00 PM - 6:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;  
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+          
+                  <!-- Collapsible CSS Code Section -->
+                  <div class="collapse text-start mt-2" id="cssCode11">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+.networks 
+{
+    background-color: #3a5f6f;
+    color: white;
+}
+.nstp 
+{
+    background-color: #4d7253; 
+    color: white;
+}
+.os 
+{
+    background-color: #753a3a; 
+    color: white;
+}
+.programming 
+{
+    background-color: #5c3a75; 
+    color: white;
+}
+.discrete 
+{
+    background-color: #8a6e34; 
+    color: white;
+}
+.contemporary 
+{
+    background-color: #855040; 
+    color: white;
+}
+.hci 
+{
+    background-color: #3f6a60; 
+    color: white;
+}
+.fitness 
+{
+    background-color: #34495e; 
+    color: white;
+}
+.sts 
+{
+    background-color: #d35400; 
+    color: white;
+}
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!--ExerciseCSS3-->
+        <div class="modal fade" id="activityModal12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid3.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS3.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode12">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode12">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;style&gt;
+        .head 
+        {
+            font-family: Arial;
+        }
+
+        body 
+        {    
+             width: 100%;
+             max-width: 800px;
+             margin: 20px auto;
+             padding: 10px;
+             background-color: bisque;           
+        }
+        .Text
+        {
+            text-align: justify;
+            font-family: Arial;
+        }
+        hr
+        {
+            border: solid 1px;
+        }
+        .references
+        {
+            font-size: 14pt;
+            word-wrap: break-word;
+
+        }
+        .date
+        {
+            font-size: 13px; 
+        }
+        .ref
+        {
+            text-align: center;
+        }
+
+    &lt;/style&gt;
+
+    &lt;title&gt;Why Horror Fans Should Play Indie Studio Project Moon&#39;s Games Hans Lopez&lt;/title&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;ArticleLinks.css&quot;&gt;
+        &lt;div class=&quot;head&quot;&gt;
+        &lt;h1&gt;Why Horror Fans Should Play Indie Studio Project Moon&#39;s Games&lt;/h1&gt;
+        &lt;h2&gt;A Deep Dive into Dark Storytelling and Challenging Gameplay&lt;/h2&gt;
+        &lt;h3&gt;By: &lt;a target=&quot;_blank&quot; href=&quot;mailto:20124537@s.ubaguio.edu&quot;&gt;Hans Jayden A. Lopez&lt;/a&gt;&lt;br&gt;&lt;div class = date&gt;February 3, 2025&lt;/div&gt;&lt;/h3&gt;
+        &lt;hr&gt;
+        &lt;/div&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;div class=&quot;Text&quot;&gt;
+        &lt;p&gt;
+            For fans of the horror genre, discovering games that delve deep into psychological terror and explore dark, unsettling themes is always a thrill. Indie studio &lt;a href=&quot;https://projectmoon.fandom.com/wiki/Project_Moon&quot; target=&quot;_blank&quot;&gt;Project Moon&lt;/a&gt; 
+            is a developer that has mastered the art of creating nightmarish, thought-provoking worlds that are far from conventional. Their games, Lobotomy Corporation and Library of Ruina,
+            offer horror fans a unique blend of storytelling, gameplay, and atmosphere. Project Moon&#39;s approach to horror is unlike anything seen in mainstream titles, making their games
+            essential experiences for anyone who craves something more intense and cerebral.&lt;br&gt;&lt;br&gt;
+
+            What sets Project Moon apart is its ability to combine dark narratives with innovative gameplay mechanics. In &lt;a href=&quot;https://lobotomycorp.fandom.com/wiki/Home&quot; target=&quot;_blank&quot;&gt;Lobotomy Corporation&lt;/a&gt;, players are tasked with managing a corporation
+            that contains dangerous entities known as &quot; &lt;a href=&quot;https://projectmoon.fandom.com/wiki/Abnormalities&quot; target=&quot;_blank&quot;&gt;Abnormalities&lt;/a&gt;.&quot; While it may sound like a typical management sim at first glance, the game is packed with horrific imagery, moral dilemmas,
+            and existential questions that make players feel the weight of every decision. The horror isn&#39;t just in the gruesome visuals, but in the overwhelming sense of responsibility and the
+            ethical compromises the player must face. This type of emotional and &lt;a href=&quot;https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22&quot; target=&quot;_blank&quot;&gt;psychological horror&lt;/a&gt; is a rare but powerful experience.&lt;br&gt;&lt;br&gt;
+
+            In &lt;a href=&quot;https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki&quot; target=&quot;_blank&quot;&gt;Library of Ruina&lt;/a&gt;, the terror is no longer just external but internal, as players enter a strange library where the battles they face are rooted in the inner workings of human nature
+            and despair. The game’s turn-based combat is coupled with a narrative that explores the darker side of humanity, including suffering, loss, and the pursuit of meaning. The visceral
+            nature of the combat, combined with the thematic elements of the story, pulls players into a world that’s as haunting as it is profound. For horror fans, Library of Ruina offers a different
+            type of terror, one that stems from understanding the human psyche&#39;s fragility and the darkness that dwells within.&lt;br&gt;&lt;br&gt;
+
+            Another reason horror fans should turn to Project Moon’s titles is the company&#39;s mastery in &lt;a href=&quot;https://www.youtube.com/watch?v=G0oSTZ5jtLQ&quot; target=&quot;_blank&quot;&gt;world-building&lt;/a&gt;. Both Lobotomy Corporation and Library of Ruina feature intricate universes full of
+            lore and hidden stories waiting to be uncovered. Every Abnormality, every character, and every piece of dialogue holds a deeper meaning. The sense of mystery is palpable, as the more players
+            explore these worlds, the more unsettling truths they uncover. This level of depth is rarely seen in traditional horror games, which tend to prioritize immediate scares over a complex and
+            evolving world. &lt;br&gt;&lt;br&gt;
+
+            Finally, the unique &lt;a href=&quot;https://www.gamedeveloper.com/design/the-art-of-games&quot; target=&quot;_blank&quot;&gt;art direction&lt;/a&gt; in Project Moon’s games adds another layer of horror that complements the gameplay and narrative. With its distinctive, often grotesque character designs,
+            Project Moon’s visual style pulls players into its dark and twisted worlds. The game’s anime-inspired art, combined with unsettling themes, creates a sense of dissonance—beauty mixed with
+            horror—that amplifies the eerie atmosphere. This juxtaposition between the gorgeous artwork and the disturbing content heightens the emotional impact, offering horror fans a visually
+            captivating yet nightmarish experience.&lt;br&gt;&lt;br&gt;
+        &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;h2 class=&quot;ref&quot;&gt;References&lt;/h2&gt;
+        &lt;div class = references&gt;
+        &lt;a href=&quot;https://projectmoon.fandom.com/wiki/Project_Moon&quot; target=&quot;_blank&quot;&gt;https://projectmoon.fandom.com/wiki/Project_Moon&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://lobotomycorp.fandom.com/wiki/Home&quot; target=&quot;_blank&quot;&gt;https://lobotomycorp.fandom.com/wiki/Home&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://projectmoon.fandom.com/wiki/Abnormalities&quot; target=&quot;_blank&quot;&gt;https://projectmoon.fandom.com/wiki/Abnormalities&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22&quot; target=&quot;_blank&quot;&gt;https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki&quot; target=&quot;_blank&quot;&gt;https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://www.youtube.com/watch?v=G0oSTZ5jtLQ&quot; target=&quot;_blank&quot;&gt;https://www.youtube.com/watch?v=G0oSTZ5jtLQ&lt;/a&gt;&lt;br&gt;
+        &lt;a href=&quot;https://www.gamedeveloper.com/design/the-art-of-games&quot; target=&quot;_blank&quot;&gt;https://www.gamedeveloper.com/design/the-art-of-games&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS4-->
+        <div class="modal fade" id="activityModal13" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid4.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS4.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode13" onclick="toggleCode('htmlCode13')">View HTML</button>
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#cssCode13" onclick="toggleCode('cssCode13')">View External CSS</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode13">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Exercise 4: Lists with External CSS&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="ListCSS.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="box"&gt;
+        &lt;h3 class="main-header"&gt;Winter and Snow Camping Safety for Scout Leaders&lt;/h3&gt;
+
+        &lt;h3 class="sub-header"&gt;
+            Topics Covered&lt;br&gt;&lt;br&gt;
+            &lt;u&gt;Session 1 -&lt;/u&gt; The Fun Stuff - In town, Saturday morning
+        &lt;/h3&gt;
+
+        &lt;ol class="numbered-list1"&gt;
+            &lt;li&gt;Goals&lt;/li&gt;
+            &lt;li&gt;Introductory remarks and outline of this course&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+            &lt;ul class="circle-list1"&gt;
+                &lt;li&gt;Clothing&lt;/li&gt;
+                &lt;li&gt;Sleeping materials&lt;/li&gt;
+                &lt;ul class="square-list1"&gt;
+                    &lt;li class="list-item"&gt;Sleeping bags&lt;/li&gt;
+                    &lt;li class="list-item"&gt;Sleeping pad&lt;/li&gt;
+                    &lt;li class="list-item"&gt;Other sleeping gear&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;li&gt;Tents and other camp&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Trip planning&lt;/li&gt;
+            &lt;li&gt;Winter driving&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h3 class="sub-header"&gt;
+            &lt;u&gt;Session 2&lt;/u&gt; - Serious Concerns - &lt;span class="italic-text"&gt;In town, Saturday afternoon&lt;/span&gt;
+        &lt;/h3&gt;
+
+        &lt;ol class="numbered-list2"&gt;
+            &lt;li&gt;Further Administrative Details&lt;/li&gt;
+            &lt;li&gt;Overview of problems unique to winter and snow activities&lt;/li&gt;
+            &lt;li&gt;Round Robin&lt;/li&gt;
+            &lt;ul class="circle-list2"&gt;
+                &lt;li&gt;Minimum Impact Camping and Sanitation&lt;/li&gt;
+                &lt;li&gt;Snow travel and intro to&lt;/li&gt;
+                &lt;ul class="square-list2"&gt;
+                    &lt;li class="list-item1"&gt;Skis&lt;/li&gt;
+                    &lt;li class="list-item1"&gt;Snowshoes&lt;/li&gt;
+                    &lt;li class="list-item1"&gt;Sleds&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;li&gt;Weather - some considerations on how winter differs from summer trips&lt;/li&gt;
+                &lt;li&gt;Avalanche dangers&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Navigating - Special considerations in land navigation in winter conditions&lt;/li&gt;
+            &lt;li&gt;Dealing with Winter Emergencies&lt;/li&gt;
+            &lt;li&gt;Other Problems to Consider and Wrap-up of session&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+          
+                  <!-- Collapsible CSS Code Section -->
+                  <div class="collapse text-start mt-2" id="cssCode13">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+body {
+    background-color: #faf0e6;
+    font-family: Arial;
+    font-size: 14pt;
+}
+
+.box {
+    border: solid 2px black;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.main-header {
+    font-family: Arial;
+    color: red;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.sub-header {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/*lists*/
+.numbered-list1 {
+    list-style-type: decimal;
+    color: #4169e1;
+}
+.numbered-list2 {
+    list-style-type: decimal;
+    color: #ff8c00;
+}
+
+.circle-list1 {
+    list-style-type: circle;
+    color: #2e8b57;
+}
+.circle-list2 {
+    list-style-type: circle;
+    color: #9370db;
+}
+
+.square-list1 {
+    list-style-type: square;
+    color: #b22222;
+}
+.square-list2 {
+    list-style-type: square;
+    color: #daa520;
+}
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS5a-->
+        <div class="modal fade" id="activityModal14" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid5a.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS5a.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode14" onclick="toggleCode('htmlCode14')">View HTML</button>
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#cssCode14" onclick="toggleCode('cssCode14')">View External CSS</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode14">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;head&gt;  
+     &lt;link rel="stylesheet" type="text/css" href="MarginCSS.css"&gt;   
+    &lt;style&gt;
+        body{
+            background-color: thistle;    
+            background-image: url(The\ Library\ -\ Floor\ of\ Language.png);
+            
+            color: rgb(43, 35, 35);
+            text-shadow: 2px 2px 5px black;
+            }
+        hr {
+            width: 100%;
+            height: 4px;
+            background-color: #361010;
+            border: none;
+            box-shadow: 2px 2px 5px#361010;
+            } 
+        h3 {
+            text-decoration: underline;
+            }
+        .box 
+            {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            }
+        body::before 
+            {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25); 
+            z-index: -1; 
+            }
+    &lt;/style&gt;
+
+        &lt;div class="box"&gt;  
+        &lt;title&gt;Sample Polynomial Expressions By Hans Jayden Lopez&lt;/title&gt;        
+    &lt;/head&gt; 
+
+    &lt;body style="color: #361010;"&gt;
+        &lt;h3 style="font-family: Arial; font-size: 24px; font-weight: bold;"&gt;Sample Polynomial Expressions:&lt;/h3&gt;
+        
+               &lt;pre style="font-size: x-large; font-family: 'Times New Roman'"&gt;
+           &lt;b style="font-family: Arial;"&gt;&lt;u&gt;Name&lt;/u&gt;                 &lt;u&gt;Example&lt;/u&gt;                                              &lt;u&gt;Note&lt;/u&gt;&lt;/b&gt;
+
+           Monomial             (3x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3)&lt;/sup&gt; &amp;divide; 1                                                 Q&lt;sub&gt;1&lt;/sub&gt;: One term (mono)&lt;br&gt;
+           Binomial               2xy + 1/2y&lt;sup&gt;2&lt;/sup&gt;                                                Q&lt;sub&gt;2&lt;/sub&gt;: Two terms (bi)&lt;br&gt;
+           Trinomial              x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;4&lt;/sup&gt; + 2x&lt;sup&gt;3&lt;/sup&gt;y + xy&lt;sup&gt;2&lt;/sup&gt;                                      Q&lt;sub&gt;3&lt;/sub&gt;: Three terms (tri)&lt;br&gt;
+           Polynomial           6x&lt;sup&gt;4&lt;/sup&gt;y + 5x&lt;sup&gt;3&lt;/sup&gt;y&lt;sup&gt;2&lt;/sup&gt; + 4x&lt;sup&gt;2&lt;/sup&gt;y&lt;sup&gt;3&lt;/sup&gt; + xy&lt;sup&gt;4&lt;/sup&gt; + 7y&lt;sup&gt;5&lt;/sup&gt;             Q&lt;sub&gt;4&lt;/sub&gt;: Many terms (poly)&lt;hr&gt;
+&amp;copy; College Algebra Fundamentals
+               &lt;/pre&gt; 
+        
+        &lt;/div&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+          
+                  <!-- Collapsible CSS Code Section -->
+                  <div class="collapse text-start mt-2" id="cssCode14">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+body {
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS5b-->
+        <div class="modal fade" id="activityModal15" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid5b.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS5b.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode15" onclick="toggleCode('htmlCode15')">View HTML</button>
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#cssCode15" onclick="toggleCode('htmlCode15')">View External CSS</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode15">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Schedule of Hans Jayden A. Lopez&lt;/title&gt;
+    &lt;link rel="stylesheet" href="ExerciseCSS2b.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MarginCSS.css"&gt;
+    
+&lt;style&gt;
+body {
+font-family: Tahoma;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f0f0f0;
+background-image: url(Unnamed\ [Distorted\ Yan].png);
+}
+table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 5px;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+text-align: center;
+}
+th, td {
+padding: 10px;
+border: 1px solid #34495e;
+}
+th {
+background-color:#2a4d57;
+color: #fff;
+}
+.container 
+{
+width: 100%;
+max-width: 1030px;
+}
+h1
+{
+ text-align: center;
+ color: white;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;    
+    &lt;div class="container"&gt;
+    &lt;h1&gt;Schedule of Hans Jayden A. Lopez&lt;/h1&gt;   
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Subject&lt;/th&gt;
+            &lt;th&gt;Time&lt;/th&gt;
+            &lt;th&gt;Days&lt;/th&gt;
+            &lt;th&gt;Room&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="networks"&gt;Networks and Communications&lt;/td&gt;
+            &lt;td&gt;8:00 AM - 9:00 AM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday&lt;/td&gt;
+            &lt;td&gt;F216&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="nstp"&gt;National Service Training Program 2&lt;/td&gt;
+            &lt;td&gt;8:00 AM - 9:30 AM&lt;/td&gt;
+            &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="os"&gt;Operating System&lt;/td&gt;
+            &lt;td&gt;9:00 AM - 10:00 AM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F214&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="programming"&gt;Computer Programming&lt;/td&gt;
+            &lt;td&gt;11:00 AM - 2:00 PM&lt;/td&gt;
+            &lt;td&gt;Tuesday, Thursday&lt;/td&gt;
+            &lt;td&gt;P213&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="discrete"&gt;Discrete Structures 1&lt;/td&gt;
+            &lt;td&gt;11:00 AM - 12:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="contemporary"&gt;The Contemporary World&lt;/td&gt;
+            &lt;td&gt;1:00 PM - 2:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;R212&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="hci"&gt;Human Computer Interaction&lt;/td&gt;
+            &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Friday&lt;/td&gt;
+            &lt;td&gt;F112&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="fitness"&gt;Exercise-Based Fitness Activities&lt;/td&gt;
+            &lt;td&gt;2:00 PM - 4:00 PM&lt;/td&gt;
+            &lt;td&gt;Wednesday&lt;/td&gt;
+            &lt;td&gt;TBA&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="sts"&gt;Science, Technology and Society&lt;/td&gt;
+            &lt;td&gt;5:00 PM - 6:00 PM&lt;/td&gt;
+            &lt;td&gt;Monday, Wednesday, Friday&lt;/td&gt;
+            &lt;td&gt;F106&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;  
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+          
+                  <!-- Collapsible CSS Code Section -->
+                  <div class="collapse text-start mt-2" id="cssCode15">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+body {
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--ExerciseCSS6-->
+        <div class="modal fade" id="activityModal16" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                <div class="modal-body text-center">
+                  <img src="imgs/mid6.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+          
+                  <!-- Toggle Buttons -->
+                  <div class="mb-3">
+                    <a href="Activities/Midterms/ExerciseCSS6.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode16">View HTML</button>
+                  </div>
+          
+                  <!-- Collapsible HTML Code Section -->
+                  <div class="collapse text-start" id="htmlCode16">
+                    <div class="card card-body bg-light text-dark">
+          <pre><code>
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+        .head 
+        {
+            font-family: Arial;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        body 
+        {    
+             width: 100%;
+             max-width: 1300px;
+             margin: 20px auto;
+             padding: 10px;
+             background-color: bisque;
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+             font-family: arial;           
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column1, .column2, .column3
+        {
+            width: 30%;
+            padding: 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .column1
+        {
+            background-color: rgba(0, 102, 204, 0.7);
+            border: solid 3px darkblue;
+        }
+        .column2
+        {
+            background-color: rgba(255, 204, 0, 0.7);
+            border: dotted 3px darkgoldenrod;
+        }
+        .column3
+        {
+            background-color: rgba(0, 153, 76, 0.7);
+            border: dashed 3px darkolivegreen;
+        }
+        hr
+        {
+            border: solid 1px rgb(0, 0, 0);
+        }
+        .references
+        {
+            font-size: 14pt;
+            word-wrap: break-word;
+        }
+        .date
+        {
+            font-size: 13px; 
+        }
+        .ref
+        {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+    &lt;/style&gt;
+    &lt;title&gt;Why Horror Fans Should Play Indie Studio Project Moon's Games Hans Lopez&lt;/title&gt;
+    &lt;/head&gt;   
+        &lt;link rel="stylesheet" href="ArticleLinks.css"&gt;
+        &lt;div class="head"&gt;
+        &lt;h1&gt;Why Horror Fans Should Play Indie Studio Project Moon's Games&lt;/h1&gt;
+        &lt;h2&gt;A Deep Dive into Dark Storytelling and Challenging Gameplay&lt;/h2&gt;
+        &lt;h3&gt;By: &lt;a target="_blank" href="mailto:20124537@s.ubaguio.edu"&gt;Hans Jayden A. Lopez&lt;/a&gt;&lt;br&gt;&lt;div class = date&gt;February 3, 2025&lt;/div&gt;&lt;/h3&gt;
+        &lt;hr&gt;
+        &lt;/div&gt;
+    
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="column1"&gt;
+                For fans of the horror genre, discovering games that delve deep into psychological terror and explore dark, unsettling themes is always a thrill. Indie studio 
+                &lt;a href="https://projectmoon.fandom.com/wiki/Project_Moon" target="_blank"&gt;Project Moon&lt;/a&gt; is a developer that has mastered the art of creating nightmarish, 
+                thought-provoking worlds that are far from conventional. Their games, &lt;a href="https://lobotomycorp.fandom.com/wiki/Home" target="_blank"&gt;Lobotomy Corporation&lt;/a&gt; and 
+                &lt;a href="https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki" target="_blank"&gt;Library of Ruina&lt;/a&gt;, offer horror fans a unique blend of storytelling, gameplay, 
+                and atmosphere. What sets Project Moon apart is its ability to combine dark narratives with innovative gameplay mechanics. In Lobotomy Corporation, players are tasked with 
+                managing a corporation that contains dangerous entities known as "&lt;a href="https://projectmoon.fandom.com/wiki/Abnormalities" target="_blank"&gt;Abnormalities&lt;/a&gt;." While it 
+                may sound like a typical management sim at first glance, the game is packed with horrific imagery, moral dilemmas, and existential questions that make players feel the 
+                weight of every decision. The horror isn’t just in the gruesome visuals, but in the overwhelming sense of responsibility and the ethical compromises the player must face. 
+                This type of emotional and &lt;a href="https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22" target="_blank"&gt;psychological horror&lt;/a&gt; 
+                is a rare but powerful experience. In Library of Ruina, the terror is no longer just external but internal, as players enter a strange library where the battles they face 
+                are rooted in the inner workings of human nature and despair. The game’s turn-based combat is coupled with a narrative that explores the darker side of humanity, including 
+                suffering, loss, and the pursuit of meaning. The visceral nature of the combat, combined with the thematic elements of the story, pulls players into a world that’s as 
+                haunting as it is profound.
+            &lt;/div&gt;
+            &lt;div class="column2"&gt;
+                Another reason horror fans should turn to Project Moon’s titles is the company’s mastery in &lt;a href="https://www.youtube.com/watch?v=G0oSTZ5jtLQ" target="_blank"&gt;world-building&lt;/a&gt;. 
+                Both Lobotomy Corporation and Library of Ruina feature intricate universes full of lore and hidden stories waiting to be uncovered. Every Abnormality, every character, and every 
+                piece of dialogue holds a deeper meaning. The sense of mystery is palpable, as the more players explore these worlds, the more unsettling truths they uncover. This level of 
+                depth is rarely seen in traditional horror games, which tend to prioritize immediate scares over a complex and evolving world. Instead of relying on sudden frights, Project Moon 
+                crafts an atmosphere of unease and discovery. The horror unfolds gradually, making each revelation more impactful as players piece together the fragmented lore.
+            &lt;/div&gt;
+            &lt;div class="column3"&gt;
+                Finally, the unique &lt;a href="https://www.gamedeveloper.com/design/the-art-of-games" target="_blank"&gt;art direction&lt;/a&gt; in Project Moon’s games adds another layer of horror that 
+                complements the gameplay and narrative. With its distinctive, often grotesque character designs, Project Moon’s visual style pulls players into its dark and twisted worlds. 
+                The game’s anime-inspired art, combined with unsettling themes, creates a sense of dissonance—beauty mixed with horror—that amplifies the eerie atmosphere. This juxtaposition 
+                between the gorgeous artwork and the disturbing content heightens the emotional impact, offering horror fans a visually captivating yet nightmarish experience.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;h2 class="ref"&gt;References&lt;/h2&gt;
+        &lt;div class = references&gt;
+        &lt;a href="https://projectmoon.fandom.com/wiki/Project_Moon" target="_blank"&gt;https://projectmoon.fandom.com/wiki/Project_Moon&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://lobotomycorp.fandom.com/wiki/Home" target="_blank"&gt;https://lobotomycorp.fandom.com/wiki/Home&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://projectmoon.fandom.com/wiki/Abnormalities" target="_blank"&gt;https://projectmoon.fandom.com/wiki/Abnormalities&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22" target="_blank"&gt;https://www.psychologytoday.com/intl/blog/the-mind-of-a-collector/202410/when-horror-is-a-hobby#:~:text=Horror%20stimulates%20the%20nervous%20system,as%20a%20%22fear%20vaccine.%22&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki" target="_blank"&gt;https://library-of-ruina.fandom.com/wiki/Library_Of_Ruina_Wiki&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.youtube.com/watch?v=G0oSTZ5jtLQ" target="_blank"&gt;https://www.youtube.com/watch?v=G0oSTZ5jtLQ&lt;/a&gt;&lt;br&gt;
+        &lt;a href="https://www.gamedeveloper.com/design/the-art-of-games" target="_blank"&gt;https://www.gamedeveloper.com/design/the-art-of-games&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--Finals-->
+        <!-- LAB Finals 1 -->
+        <div class="modal fade" id="activityModal17" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                    <div class="modal-body text-center">
+                        <img src="imgs/Final1.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+                
+                <!-- Toggle Buttons -->
+                        <div class="mb-3">
+                            <a href="Activities/Finals/LAB Exer1.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                            <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode17" onclick="toggleCode('htmlCode17')">View HTML</button>
+                            <button class="btn btn-secondary me-2" data-bs-toggle="collapse" data-bs-target="#cssCode17" onclick="toggleCode('cssCode17')">View External CSS</button>
+                            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#jsCode17" onclick="toggleCode('jsCode17')">View JavaScript</button>
+                        </div>
+        
+                <!-- Collapsible HTML Code Section -->
+                    <div class="collapse text-start" id="htmlCode17">
+                        <div class="card card-body bg-light text-dark">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;script type="text/javascript" src="LAB Exer1.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" href="LAB Exer1.css"&gt;
+    &lt;title&gt;Simple Calculator&lt;/title&gt;
+&lt;/head&gt;
+    
+&lt;body&gt;
+    &lt;div class="box"&gt;
+        &lt;input type="text" id="num1" placeholder="ENTER A NUMBER"&gt;&lt;br&gt;
+        &lt;input type="text" id="num2" placeholder="ENTER A NUMBER"&gt;&lt;br&gt;
+    
+        &lt;br&gt;
+        &lt;button onclick="calculateSum();"&gt;Add&lt;/button&gt;
+        &lt;button onclick="calculateDiff();"&gt;Minus&lt;/button&gt;
+        &lt;button onclick="calculateProduct();"&gt;Multiply&lt;/button&gt;
+        &lt;button onclick="calculateQuotient();"&gt;Divide&lt;/button&gt;
+        &lt;div id="Result"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;    
+</code></pre>
+                        </div>
+                    </div>
+        
+                <!-- Collapsible CSS Code Section -->
+                    <div class="collapse text-start mt-2" id="cssCode17">
+                        <div class="card card-body bg-light text-dark">
+<pre><code>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.box{
+    
+    text-align: center;
+    background-color: antiquewhite;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    margin: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e56700;
+}
+#Result {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #333;
+}
+</code></pre>
+                        </div>
+                    </div>
+
+                <!-- Collapsible JS Code Section -->
+                <div class="collapse text-start mt-2" id="jsCode17">
+                    <div class="card card-body bg-light text-dark">
+<pre><code>
+function calculateSum() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var sum = num1 + num2;
+    document.getElementById("Result").innerText = "SUM: " + sum;
+}
+function calculateDiff() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var diff = num1 - num2;
+    document.getElementById("Result").innerText = "DIFFERENCE: " + diff;
+}
+function calculateProduct() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var pro = num1 * num2;
+    document.getElementById("Result").innerText = "PRODUCT: " + pro;
+}
+function calculateQuotient() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var quo = num1 / num2;
+    document.getElementById("Result").innerText = "QUOTIENT: " + quo;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LAB Finals 2 -->
+        <div class="modal fade" id="activityModal18" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                    <div class="modal-body text-center">
+                        <img src="imgs/Final2.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+
+                        <!-- Toggle Buttons -->
+                        <div class="mb-3">
+                            <a href="Activities/Finals/LAB Exer2.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                            <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode18" onclick="toggleCode('htmlCode18')">View HTML</button>
+                            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#jsCode18" onclick="toggleCode('jsCode18')">View JavaScript</button>
+                        </div>
+
+                        <!-- Collapsible HTML Code Section -->
+                        <div class="collapse text-start" id="htmlCode18">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"&gt;
+    &lt;title&gt;LAB Exercise 2&lt;/title&gt;
+    &lt;script type="text/javascript" src="LAB Exer2.js"&gt;&lt;/script&gt;
+    &lt;style&gt;
+        body {
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type="text" id="num" placeholder="ENTER A NUMBER"&gt; 
+    &lt;button onclick="getResult()"&gt;Submit&lt;/button&gt;&lt;br&gt;&lt;br&gt;
+    &lt;div id="result1"&gt;&lt;/div&gt;&lt;br&gt;
+    &lt;div id="result2"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible JS Code Section -->
+                        <div class="collapse text-start mt-2" id="jsCode18">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+function getResult() {
+    var num = document.getElementById('num').value;
+    var count = 0;
+    var i;
+    if(num == 0){
+        document.getElementById('result1').innerHTML = "Number is ZERO";
+    } else {
+        if (num % 2 == 0) {
+            document.getElementById('result1').innerHTML = "EVEN";
+        } else {
+            document.getElementById('result1').innerHTML = "ODD";
+        }
+    }
+
+    if (num &lt;= 1) {
+        document.getElementById('result2').innerHTML = "INVALID";
+    }else{
+        for (i = 0; i &lt;= num; i++){
+            if (num % 2 == 0) {
+                count++
+            }
+        }
+        if (count &lt;= 2){
+            document.getElementById('result2').innerHTML = "PRIME";
+        } else {
+            document.getElementById('result2').innerHTML = "COMPOSITE";
+        }
+    }
+    
+}
+        </code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LAB Finals 3 -->
+        <div class="modal fade" id="activityModal19" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                    <div class="modal-body text-center">
+                        <img src="imgs/Final3.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+
+                        <!-- Toggle Buttons -->
+                        <div class="mb-3">
+                            <a href="Activities/Finals/LAB Exer3.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                            <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode19" onclick="toggleCode('htmlCode19')">View HTML</button>
+                            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#jsCode19" onclick="toggleCode('jsCode19')">View JavaScript</button>
+                        </div>
+
+                        <!-- Collapsible HTML Code Section -->
+                        <div class="collapse text-start" id="htmlCode19">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;LAB Exercise 3&lt;/title&gt;
+    &lt;script type="text/javascript" src="LAB Exer3.js"&gt;&lt;/script&gt;
+    &lt;style&gt;
+        body {
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type="text" id="num" placeholder="ENTER A NUMBER"&gt; 
+    &lt;button onclick="calculate()"&gt;Submit&lt;/button&gt;&lt;br&gt;
+    &lt;div id="result"&gt;&lt;/div&gt;&lt;br&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible JS Code Section -->
+                        <div class="collapse text-start mt-2" id="jsCode19">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+function calculate(){
+    var num = parseFloat(document.getElementById("num").value);
+    var answer = num * 100000;
+    document.getElementById("result").innerText = num + " Kilometers is: " + answer + "cm";
+}
+        </code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- LAB Finals 4 -->
+        <div class="modal fade" id="activityModal20" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3 rounded-4 animate__animated animate__zoomIn">
+                    <div class="modal-body text-center">
+                        <img src="imgs/Final4.PNG" class="img-fluid rounded-3 mb-3" alt="Activity Enlarged">
+
+                        <!-- Toggle Buttons -->
+                        <div class="mb-3">
+                            <a href="Activities/Finals/LAB Exer4.html" target="_blank" class="btn btn-success me-2">View Activity</a>
+                            <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#htmlCode20" onclick="toggleCode('htmlCode20')">View HTML</button>
+                            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#jsCode20" onclick="toggleCode('jsCode20')">View JavaScript</button>
+                        </div>
+
+                        <!-- Collapsible HTML Code Section -->
+                        <div class="collapse text-start" id="htmlCode20">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>LAB Exercise 4&lt;/title&gt;
+    &lt;script type="text/javascript" src="LAB Exer4.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible JS Code Section -->
+                        <div class="collapse text-start mt-2" id="jsCode20">
+                            <div class="card card-body bg-light text-dark">
+        <pre><code>
+&lt;script&gt;
+var row = prompt("ENTER NUMBER OF ROWS");
+var col = prompt("ENTER NUMBER OF COLUMNS");
+var i;
+var j;
+
+document.write("&lt;table border='1'&gt;");
+for (i = 1; i &lt;= row; i++) {
+    document.write("&lt;tr&gt;");
+    for (j = 1; j &lt;= col; j++) {
+        document.write("&lt;td style='padding: 20px; text-align: center;'&gt;" + i * j + "&lt;/td&gt;");
+    }
+    document.write("&lt;/tr&gt;");
+}
+document.write("&lt;/table&gt;");
+&lt;/script&gt;
+        </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-white border-0 rounded-4">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title mx-auto" id="contactModalLabel">Contact Me</h5>
+                        <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="modal-body d-flex flex-column flex-md-row justify-content-around align-items-center gap-4 py-4 text-center">
+                        <div>
+                            <p class="mb-1">PO Box 2600, Baguio City, Philippines</p>
+                            <p class="mb-1">
+                                <a href="mailto:lopezhans119@gmail.com" class="text-decoration-none text-white">lopezhans119@gmail.com</a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="tel:+63 908 344 2092" class="text-decoration-none text-white">+63 908 344 2092</a>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer border-0 justify-content-center pt-0">
+                        <div class="modal-body py-4 px-4">
+                            <form id="contactForm" onsubmit="return validateForm()" class="text-start w-100">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-control" placeholder="Enter your message" rows="3"></textarea>
+                                </div>
+                                <div id="formError" class="text-danger mb-2"></div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-warning">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="w-100 text-center border-top border-secondary pt-3">
+                            <small class="text-light">© Hans Lopez</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="validation.js"></script>
+    </body>
+</html>
